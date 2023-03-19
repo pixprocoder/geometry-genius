@@ -42,9 +42,10 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
 document.getElementById("rectangle-btn").addEventListener("click", function () {
   const rectangleResult = calculateTwoFormulas(
     "rectangle-input-field-w",
-    "rectangle-input-field-l"
+    "rectangle-input-field-l",
+    "rectangle"
   );
-  console.log(rectangleResult);
+  setResults(rectangleResult);
 });
 
 // Parallelogram calculation
@@ -53,7 +54,8 @@ document
   .addEventListener("click", function () {
     const parallelogramResult = calculateTwoFormulas(
       "parallelogram-input-field-base",
-      "parallelogram-input-field-height"
+      "parallelogram-input-field-height",
+      "parallelogram"
     );
-    console.log(parallelogramResult);
+    setResults(parallelogramResult);
   });

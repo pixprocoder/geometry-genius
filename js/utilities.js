@@ -22,19 +22,20 @@ function calculateThreeFormulas(first, second, text) {
   return { result, name };
 }
 
-function calculateTwoFormulas(first, second) {
+function calculateTwoFormulas(first, second, text) {
   const inputFieldFirst = document.getElementById(first);
   const inputFieldSecond = document.getElementById(second);
+  const nameElement = document.getElementById(text);
   const inputValueFirst = inputFieldFirst.value;
   const inputValueSecond = inputFieldSecond.value;
   const result = inputValueFirst * inputValueSecond;
-  return result;
+  const name = nameElement.innerText;
+  return { result, name };
 }
 
 // Get and set Functions
 //---------------------------------
 function setResults(results) {
-  console.log(results);
   const parentContainer = document.getElementById("area-container-ul");
   const li = document.createElement("li");
   li.innerHTML = `
