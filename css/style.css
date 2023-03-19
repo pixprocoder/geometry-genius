@@ -19,7 +19,16 @@ header {
   padding: 20px 0;
   /* background-color: rgb(238, 238, 238); */
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.blog-link a {
+  padding: 8px;
+  background: #1090d8;
+  border-radius: 5px;
+}
+
 header > div > h1 {
   font-weight: 400;
 }

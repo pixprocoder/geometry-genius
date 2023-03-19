@@ -13,3 +13,33 @@ body {
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
+.blog-link {
+  padding: 8px 12px;
+  background-color: #1090d8;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.blog h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.blog {
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+/* Mobile responsive  */
+@media only screen and (max-width: 576px) {
+  .blog {
+    margin: 20px;
+  }
+}
