@@ -2,9 +2,11 @@
 document.getElementById("triangle-btn").addEventListener("click", function () {
   const triangleResult = calculateThreeFormulas(
     "triangle-input-field-b",
-    "triangle-input-field-h"
+    "triangle-input-field-h",
+    "triangle"
   );
-  console.log(triangleResult);
+  const elements = getElements("object-name", "result", triangleResult);
+  console.log(elements);
 });
 
 // Pentagon calculation
