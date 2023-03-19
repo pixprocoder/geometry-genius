@@ -27,3 +27,21 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   const result = triangleWidthValue * triangleLengthValue;
   console.log(result);
 });
+
+// rectangle calculation
+document
+  .getElementById("parallelogram-btn")
+  .addEventListener("click", function () {
+    const parallelogramBaseInputField = document.getElementById(
+      "parallelogram-input-field-base"
+    );
+    const parallelogramHeightInputField = document.getElementById(
+      "parallelogram-input-field-height"
+    );
+    const parallelogramBaseValue = parallelogramBaseInputField.value;
+    const parallelogramHeightValue = parallelogramHeightInputField.value;
+
+    // calculate the triangle area
+    const result = parallelogramBaseValue * parallelogramHeightValue;
+    console.log(result);
+  });
