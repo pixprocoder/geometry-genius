@@ -14,14 +14,21 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* Card Container style  */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
 /* Single card style  */
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 40px 50px;
+  padding: 30px 40px;
   gap: 30px;
   border: 1px solid lightblue;
+  border-radius: 10px;
 }
 .input-field-container {
   text-align: center;
@@ -40,7 +47,7 @@ body {
   margin: 0 auto;
 }
 .calculate-btn {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   background-color: #1090d8;
   padding: 10px;
@@ -54,5 +61,5 @@ body {
 .card-heading,
 .card-description {
   text-align: center;
-  margin: 5px 0;
+  margin-top: 15px;
 }
