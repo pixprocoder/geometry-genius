@@ -11,7 +11,8 @@ function calculateThreeFormulas(first, second) {
   //  Calculate Areas
   if (first === "ellipse-input-field-a") {
     const result = piInitialValue * inputValueFirst * inputValueSecond;
-    return result.toFixed(2);
+    const fixedResult = parseFloat(result.toFixed(2));
+    return fixedResult;
   }
   const result = initialValue * inputValueFirst * inputValueSecond;
   return result;
