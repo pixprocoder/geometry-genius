@@ -25,6 +25,15 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
   console.log(rhombusResult);
 });
 
+// ellipse calculation
+document.getElementById("ellipse-btn").addEventListener("click", function () {
+  const ellipseResult = getValueById(
+    "ellipse-input-field-a",
+    "ellipse-input-field-b"
+  );
+  console.log(ellipseResult);
+});
+
 // rectangle calculation
 document.getElementById("rectangle-btn").addEventListener("click", function () {
   const triangleWidthInputField = document.getElementById(
@@ -58,16 +67,3 @@ document
     const result = parallelogramBaseValue * parallelogramHeightValue;
     console.log(result);
   });
-
-// ellipse calculation
-document.getElementById("ellipse-btn").addEventListener("click", function () {
-  const ellipseAInputField = document.getElementById("ellipse-input-field-a");
-  const ellipseBInputField = document.getElementById("ellipse-input-field-b");
-  const ellipseAValue = ellipseAInputField.value;
-  const ellipseBValue = ellipseBInputField.value;
-
-  const initialValue = 3.14;
-  // calculate the triangle area
-  const result = initialValue * ellipseAValue * ellipseBValue;
-  console.log(result.toFixed(2));
-});

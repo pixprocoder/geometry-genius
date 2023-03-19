@@ -3,8 +3,16 @@ function getValueById(first, second) {
   const inputFieldSecond = document.getElementById(second);
   const inputValueFirst = inputFieldFirst.value;
   const inputValueSecond = inputFieldSecond.value;
+
+  // Initial Values
   const initialValue = 0.5;
-  //  calculate the triangle area
+  const piInitialValue = 3.14;
+
+  //  Calculate Areas
+  if (first === "ellipse-input-field-a") {
+    const result = piInitialValue * inputValueFirst * inputValueSecond;
+    return result.toFixed(2);
+  }
   const result = initialValue * inputValueFirst * inputValueSecond;
   return result;
 
