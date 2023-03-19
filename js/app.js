@@ -7,6 +7,24 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
   console.log(triangleResult);
 });
 
+// pentagon calculation
+document.getElementById("pentagon-btn").addEventListener("click", function () {
+  const pentagonResult = getValueById(
+    "pentagon-input-field-p",
+    "pentagon-input-field-b"
+  );
+  console.log(pentagonResult);
+});
+
+// rhombus calculation
+document.getElementById("rhombus-btn").addEventListener("click", function () {
+  const rhombusResult = getValueById(
+    "rhombus-input-field-d1",
+    "rhombus-input-field-d2"
+  );
+  console.log(rhombusResult);
+});
+
 // rectangle calculation
 document.getElementById("rectangle-btn").addEventListener("click", function () {
   const triangleWidthInputField = document.getElementById(
@@ -40,32 +58,6 @@ document
     const result = parallelogramBaseValue * parallelogramHeightValue;
     console.log(result);
   });
-
-// rhombus calculation
-document.getElementById("rhombus-btn").addEventListener("click", function () {
-  const rhombusD1InputField = document.getElementById("rhombus-input-field-d1");
-  const rhombusD2InputField = document.getElementById("rhombus-input-field-d2");
-  const rhombusD1Value = rhombusD1InputField.value;
-  const rhombusD2Value = rhombusD2InputField.value;
-
-  const initialValue = 0.5;
-  // calculate the triangle area
-  const result = initialValue * rhombusD1Value * rhombusD2Value;
-  console.log(result);
-});
-
-// pentagon calculation
-document.getElementById("pentagon-btn").addEventListener("click", function () {
-  const pentagonPInputField = document.getElementById("pentagon-input-field-p");
-  const pentagonBInputField = document.getElementById("pentagon-input-field-b");
-  const pentagonPValue = pentagonPInputField.value;
-  const pentagonBValue = pentagonBInputField.value;
-
-  const initialValue = 0.5;
-  // calculate the triangle area
-  const result = initialValue * pentagonPValue * pentagonBValue;
-  console.log(result);
-});
 
 // ellipse calculation
 document.getElementById("ellipse-btn").addEventListener("click", function () {
