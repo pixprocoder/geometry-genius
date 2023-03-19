@@ -28,7 +28,7 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   console.log(result);
 });
 
-// rectangle calculation
+// parallelogram calculation
 document
   .getElementById("parallelogram-btn")
   .addEventListener("click", function () {
@@ -45,3 +45,16 @@ document
     const result = parallelogramBaseValue * parallelogramHeightValue;
     console.log(result);
   });
+
+// parallelogram calculation
+document.getElementById("rhombus-btn").addEventListener("click", function () {
+  const rhombusD1InputField = document.getElementById("rhombus-input-field-d1");
+  const rhombusD2InputField = document.getElementById("rhombus-input-field-d2");
+  const rhombusD1Value = rhombusD1InputField.value;
+  const rhombusD2Value = rhombusD2InputField.value;
+
+  const initialValue = 0.5;
+  // calculate the triangle area
+  const result = initialValue * rhombusD1Value * rhombusD2Value;
+  console.log(result);
+});
