@@ -44,8 +44,11 @@ function setResults(results) {
   const parentContainer = document.getElementById("area-container-ul");
   const li = document.createElement("li");
   li.innerHTML = `
+    <div class="result-container">
     <p>${results.name}</p>  
-    <p>${results.result}</p>   
+    <p>${results.result}cm<sup>2</sup></p>   
+    <button>Convert to m<sup>2</sup></button>
+    </div>
     `;
   parentContainer.appendChild(li);
   li.classList.add("area-container-li");
