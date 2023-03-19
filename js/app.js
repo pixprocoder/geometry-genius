@@ -5,11 +5,19 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
   const triangleBValue = triangleBInputField.value;
   const triangleHValue = triangleHInputField.value;
 
+  // get and set result
+  const objectNameElement = document.getElementById("object-name");
+  const name = document.getElementById("triangle").innerText;
+  objectNameElement.innerText = name;
+
   const initialValue = 0.5;
 
   // calculate the triangle area
   const result = initialValue * triangleBValue * triangleHValue;
-  console.log(result);
+
+  // get and set result
+  const resultElement = document.getElementById("result");
+  resultElement.innerText = result;
 });
 
 // rectangle calculation
