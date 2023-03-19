@@ -14,6 +14,21 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* Header section style  */
+header {
+  padding: 20px 0;
+  /* background-color: rgb(238, 238, 238); */
+  margin-bottom: 20px;
+}
+header > div > h1 {
+  font-weight: 400;
+}
+header > div > h1 > span {
+  font-weight: 800;
+  color: #1090d8;
+  font-size: 1em;
+}
+
 /* Main container style   */
 .container {
   display: grid;
