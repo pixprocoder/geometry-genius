@@ -1,3 +1,7 @@
+/* Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +11,10 @@
 body {
   max-width: 1140px;
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
 
+/* Single card style  */
 .card {
   display: flex;
   flex-direction: column;
