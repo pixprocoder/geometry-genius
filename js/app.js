@@ -1,23 +1,10 @@
 // Triangle calculation
 document.getElementById("triangle-btn").addEventListener("click", function () {
-  const triangleBInputField = document.getElementById("triangle-input-field-b");
-  const triangleHInputField = document.getElementById("triangle-input-field-h");
-  const triangleBValue = triangleBInputField.value;
-  const triangleHValue = triangleHInputField.value;
-
-  // get and set result
-  const objectNameElement = document.getElementById("object-name");
-  const name = document.getElementById("triangle").innerText;
-  objectNameElement.innerText = name;
-
-  const initialValue = 0.5;
-
-  // calculate the triangle area
-  const result = initialValue * triangleBValue * triangleHValue;
-
-  // get and set result
-  const resultElement = document.getElementById("result");
-  resultElement.innerText = result;
+  const triangleResult = getValueById(
+    "triangle-input-field-b",
+    "triangle-input-field-h"
+  );
+  console.log(triangleResult);
 });
 
 // rectangle calculation
