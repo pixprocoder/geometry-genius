@@ -46,7 +46,7 @@ document
     console.log(result);
   });
 
-// parallelogram calculation
+// rhombus calculation
 document.getElementById("rhombus-btn").addEventListener("click", function () {
   const rhombusD1InputField = document.getElementById("rhombus-input-field-d1");
   const rhombusD2InputField = document.getElementById("rhombus-input-field-d2");
@@ -56,5 +56,18 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
   const initialValue = 0.5;
   // calculate the triangle area
   const result = initialValue * rhombusD1Value * rhombusD2Value;
+  console.log(result);
+});
+
+// pentagon calculation
+document.getElementById("pentagon-btn").addEventListener("click", function () {
+  const pentagonPInputField = document.getElementById("pentagon-input-field-p");
+  const pentagonBInputField = document.getElementById("pentagon-input-field-b");
+  const pentagonPValue = pentagonPInputField.value;
+  const pentagonBValue = pentagonBInputField.value;
+
+  const initialValue = 0.5;
+  // calculate the triangle area
+  const result = initialValue * pentagonPValue * pentagonBValue;
   console.log(result);
 });
