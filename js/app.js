@@ -5,17 +5,17 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
     "triangle-input-field-h",
     "triangle"
   );
-  const elements = getElements("object-name", "result", triangleResult);
-  console.log(elements);
+  setResults(triangleResult);
 });
 
 // Pentagon calculation
 document.getElementById("pentagon-btn").addEventListener("click", function () {
   const pentagonResult = calculateThreeFormulas(
     "pentagon-input-field-p",
-    "pentagon-input-field-b"
+    "pentagon-input-field-b",
+    "pentagon"
   );
-  console.log(pentagonResult);
+  setResults(pentagonResult);
 });
 
 // Rhombus calculation

@@ -33,20 +33,14 @@ function calculateTwoFormulas(first, second) {
 
 // Get and set Functions
 //---------------------------------
-function getElements(objectName, objectResult, results) {
+function setResults(results) {
+  console.log(results);
   const parentContainer = document.getElementById("area-container-ul");
-  const objectNameElement = document.getElementById(objectName);
-  const resultElement = document.getElementById(objectResult);
-  const name = objectNameElement?.innerText;
-  const result = resultElement?.innerText;
-
   const li = document.createElement("li");
   li.innerHTML = `
-  <p id="object-name" class="name">${results.name}</p>  
-  <p id="result" class="result">${results.result}</p>   
+  <p>${results.name}</p>  
+  <p>${results.result}</p>   
   `;
   parentContainer.appendChild(li);
   li.classList.add("area-container-li");
-
-  return { result, name };
 }
