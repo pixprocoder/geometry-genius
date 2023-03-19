@@ -22,18 +22,20 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
 document.getElementById("rhombus-btn").addEventListener("click", function () {
   const rhombusResult = calculateThreeFormulas(
     "rhombus-input-field-d1",
-    "rhombus-input-field-d2"
+    "rhombus-input-field-d2",
+    "rhombus"
   );
-  console.log(rhombusResult);
+  setResults(rhombusResult);
 });
 
 // Ellipse calculation
 document.getElementById("ellipse-btn").addEventListener("click", function () {
   const ellipseResult = calculateThreeFormulas(
     "ellipse-input-field-a",
-    "ellipse-input-field-b"
+    "ellipse-input-field-b",
+    "ellipse"
   );
-  console.log(ellipseResult);
+  setResults(ellipseResult);
 });
 
 // Rectangle calculation

@@ -16,7 +16,7 @@ function calculateThreeFormulas(first, second, text) {
   if (first === "ellipse-input-field-a") {
     const result = piInitialValue * inputValueFirst * inputValueSecond;
     const fixedResult = parseFloat(result.toFixed(2));
-    return { fixedResult, name };
+    return { result: fixedResult, name };
   }
   const result = initialValue * inputValueFirst * inputValueSecond;
   return { result, name };
