@@ -89,6 +89,7 @@ header > div > h1 > span {
 /* Area calculation style  */
 .area-calculation {
   background-color: #f1eeee;
+  border-radius: 10px;
 }
 .area-calculation h1 {
   text-decoration: underline;
@@ -102,4 +103,31 @@ header > div > h1 > span {
 .area-container-li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+li {
+  padding: 5px 7px;
+}
+
+/* Mobile responsive  */
+@media only screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 20px;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* tablet responsive  */
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 20px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

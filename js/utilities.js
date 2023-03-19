@@ -4,9 +4,11 @@ function calculateThreeFormulas(first, second, text) {
   const inputFieldFirst = document.getElementById(first);
   const inputFieldSecond = document.getElementById(second);
   const nameElement = document.getElementById(text);
-  const inputValueFirst = inputFieldFirst.value;
-  const inputValueSecond = inputFieldSecond.value;
   const name = nameElement.innerText;
+  const inputValueFirst = parseFloat(inputFieldFirst.value);
+  const inputValueSecond = parseFloat(inputFieldSecond.value);
+  inputFieldFirst.value = "";
+  inputFieldSecond.value = "";
 
   // Initial Values
   const initialValue = 0.5;
@@ -18,6 +20,7 @@ function calculateThreeFormulas(first, second, text) {
     const fixedResult = parseFloat(result.toFixed(2));
     return { result: fixedResult, name };
   }
+
   const result = initialValue * inputValueFirst * inputValueSecond;
   return { result, name };
 }
@@ -26,10 +29,12 @@ function calculateTwoFormulas(first, second, text) {
   const inputFieldFirst = document.getElementById(first);
   const inputFieldSecond = document.getElementById(second);
   const nameElement = document.getElementById(text);
-  const inputValueFirst = inputFieldFirst.value;
-  const inputValueSecond = inputFieldSecond.value;
+  const inputValueFirst = parseFloat(inputFieldFirst.value);
+  const inputValueSecond = parseFloat(inputFieldSecond.value);
   const result = inputValueFirst * inputValueSecond;
   const name = nameElement.innerText;
+  inputFieldFirst.value = "";
+  inputFieldSecond.value = "";
   return { result, name };
 }
 
@@ -39,9 +44,9 @@ function setResults(results) {
   const parentContainer = document.getElementById("area-container-ul");
   const li = document.createElement("li");
   li.innerHTML = `
-  <p>${results.name}</p>  
-  <p>${results.result}</p>   
-  `;
+    <p>${results.name}</p>  
+    <p>${results.result}</p>   
+    `;
   parentContainer.appendChild(li);
   li.classList.add("area-container-li");
 }
