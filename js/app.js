@@ -1,69 +1,55 @@
 // Triangle calculation
 document.getElementById("triangle-btn").addEventListener("click", function () {
-  const triangleResult = getValueById(
+  const triangleResult = calculateThreeFormulas(
     "triangle-input-field-b",
     "triangle-input-field-h"
   );
   console.log(triangleResult);
 });
 
-// pentagon calculation
+// Pentagon calculation
 document.getElementById("pentagon-btn").addEventListener("click", function () {
-  const pentagonResult = getValueById(
+  const pentagonResult = calculateThreeFormulas(
     "pentagon-input-field-p",
     "pentagon-input-field-b"
   );
   console.log(pentagonResult);
 });
 
-// rhombus calculation
+// Rhombus calculation
 document.getElementById("rhombus-btn").addEventListener("click", function () {
-  const rhombusResult = getValueById(
+  const rhombusResult = calculateThreeFormulas(
     "rhombus-input-field-d1",
     "rhombus-input-field-d2"
   );
   console.log(rhombusResult);
 });
 
-// ellipse calculation
+// Ellipse calculation
 document.getElementById("ellipse-btn").addEventListener("click", function () {
-  const ellipseResult = getValueById(
+  const ellipseResult = calculateThreeFormulas(
     "ellipse-input-field-a",
     "ellipse-input-field-b"
   );
   console.log(ellipseResult);
 });
 
-// rectangle calculation
+// Rectangle calculation
 document.getElementById("rectangle-btn").addEventListener("click", function () {
-  const triangleWidthInputField = document.getElementById(
-    "rectangle-input-field-w"
-  );
-  const triangleLengthInputField = document.getElementById(
+  const rectangleResult = calculateTwoFormulas(
+    "rectangle-input-field-w",
     "rectangle-input-field-l"
   );
-  const triangleWidthValue = triangleWidthInputField.value;
-  const triangleLengthValue = triangleLengthInputField.value;
-
-  // calculate the triangle area
-  const result = triangleWidthValue * triangleLengthValue;
-  console.log(result);
+  console.log(rectangleResult);
 });
 
-// parallelogram calculation
+// Parallelogram calculation
 document
   .getElementById("parallelogram-btn")
   .addEventListener("click", function () {
-    const parallelogramBaseInputField = document.getElementById(
-      "parallelogram-input-field-base"
-    );
-    const parallelogramHeightInputField = document.getElementById(
+    const parallelogramResult = calculateTwoFormulas(
+      "parallelogram-input-field-base",
       "parallelogram-input-field-height"
     );
-    const parallelogramBaseValue = parallelogramBaseInputField.value;
-    const parallelogramHeightValue = parallelogramHeightInputField.value;
-
-    // calculate the triangle area
-    const result = parallelogramBaseValue * parallelogramHeightValue;
-    console.log(result);
+    console.log(parallelogramResult);
   });

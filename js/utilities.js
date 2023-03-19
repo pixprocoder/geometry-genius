@@ -1,4 +1,4 @@
-function getValueById(first, second) {
+function calculateThreeFormulas(first, second) {
   const inputFieldFirst = document.getElementById(first);
   const inputFieldSecond = document.getElementById(second);
   const inputValueFirst = inputFieldFirst.value;
@@ -24,4 +24,14 @@ function getValueById(first, second) {
   //   // get and set result
   //   const resultElement = document.getElementById("result");
   //   resultElement.innerText = result;
+}
+
+function calculateTwoFormulas(first, second) {
+  const inputFieldFirst = document.getElementById(first);
+  const inputFieldSecond = document.getElementById(second);
+  const inputValueFirst = inputFieldFirst.value;
+  const inputValueSecond = inputFieldSecond.value;
+  //   calculate the triangle area
+  const result = inputValueFirst * inputValueSecond;
+  return result;
 }
